@@ -1,1 +1,1 @@
-web: python number_facts_bot.py
+worker: python number_facts_bot.py
