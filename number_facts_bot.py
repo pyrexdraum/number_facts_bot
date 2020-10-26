@@ -25,6 +25,7 @@ def send_message(message):
 def main():
     while True:
         try:
+            print(CHAT_ID, TELEGRAM_TOKEN)
             send_message(get_number_fact())
             time.sleep(300)
         except Exception as e:
