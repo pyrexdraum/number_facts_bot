@@ -1,0 +1,1 @@
+worker: python number_facts_bot.py
