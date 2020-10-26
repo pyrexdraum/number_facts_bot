@@ -9,8 +9,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
-CHAT_ID = os.getenv('CHAT_ID')
+TELEGRAM_TOKEN = os.environ.get('TELEGRAM_TOKEN')
+CHAT_ID = os.environ.get('CHAT_ID')
 
 
 def get_number_fact():
@@ -25,7 +25,6 @@ def send_message(message):
 def main():
     while True:
         try:
-            print(CHAT_ID, TELEGRAM_TOKEN)
             send_message(get_number_fact())
             time.sleep(300)
         except Exception as e:
